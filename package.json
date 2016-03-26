@@ -1,0 +1,23 @@
+{
+  "name": "fuse-jira-client",
+  "version": "0.0.1",
+  "description": "Mobile Jira client created in Fuse",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:cesarfrick/fuse-jira-client.git"
+  },
+  "keywords": [
+    "Fuse",
+    "Jira",
+    "ES6",
+    "Mobile"
+  ],
+  "author": "Cesar Frick",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.6.5"
+  }
+}
