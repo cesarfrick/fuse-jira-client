@@ -1,0 +1,6 @@
+<StackPanel ux:Class="Card" Padding="20">
+    <float4 ux:Property="CornerRadius" />
+    <Brush ux:Property="Fill" />
+
+    <Rectangle CornerRadius="{Property this.CornerRadius}" Fill="{Property this.Fill}" Layer="Background" />
+</StackPanel>

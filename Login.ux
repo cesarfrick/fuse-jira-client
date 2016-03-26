@@ -1,7 +1,8 @@
 <StackPanel ux:Class="Login" Height="40%" Padding="20" Margin="20">
-    <Rectangle CornerRadius="5" Fill="#fff" Layer="Background" />
-    <Text Value="Enter your Email and Password" Height="48" Alignment="Center" />
-    <TextInput InputHint="Email" PlaceholderText="Email" Height="40" Width="80%" />
-    <TextInput IsPassword="true" PlaceholderText="Password" Height="40" Width="80%" />
-    <Button Background="#555" Text="Login" Height="40" Width="80%" />
+    <Card CornerRadius="5" Fill="#fff" Layer="Background">
+        <Text Value="Enter your Email and Password" Height="48" Alignment="Center" />
+        <TextInput InputHint="Email" PlaceholderText="Email" Height="40" Width="80%" />
+        <TextInput IsPassword="true" PlaceholderText="Password" Height="40" Width="80%" />
+        <Button Background="#555" Text="Login" Height="40" Width="80%" />
+    </Card>
 </StackPanel>
