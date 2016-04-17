@@ -1,0 +1,4 @@
+<Card>
+    <Text Value="{title}" />
+
+</Card>
