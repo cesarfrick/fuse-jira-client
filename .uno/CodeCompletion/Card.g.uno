@@ -34,10 +34,10 @@ public partial class Card: Fuse.Controls.StackPanel
             if (FillChanged != null) FillChanged(this, args);
         }
     }
-    jiraclient_FuseControlsRectangle_float4_CornerRadius_Property temp_CornerRadius_inst;
-    jiraclient_Card_float4_CornerRadius_Property this_CornerRadius_inst;
-    jiraclient_FuseControlsShape_FuseDrawingBrush_Fill_Property temp_Fill_inst;
-    jiraclient_Card_FuseDrawingBrush_Fill_Property this_Fill_inst;
+    jiraclient_FuseControlsRectangle_CornerRadius_Property temp_CornerRadius_inst;
+    jiraclient_Card_CornerRadius_Property this_CornerRadius_inst;
+    jiraclient_FuseControlsRectangle_Fill_Property temp_Fill_inst;
+    jiraclient_Card_Fill_Property this_Fill_inst;
     static Card()
     {
     }
@@ -48,10 +48,10 @@ public partial class Card: Fuse.Controls.StackPanel
     void InitializeUX()
     {
         var temp = new Fuse.Controls.Rectangle();
-        temp_CornerRadius_inst = new jiraclient_FuseControlsRectangle_float4_CornerRadius_Property(temp);
-        this_CornerRadius_inst = new jiraclient_Card_float4_CornerRadius_Property(this);
-        temp_Fill_inst = new jiraclient_FuseControlsShape_FuseDrawingBrush_Fill_Property(temp);
-        this_Fill_inst = new jiraclient_Card_FuseDrawingBrush_Fill_Property(this);
+        temp_CornerRadius_inst = new jiraclient_FuseControlsRectangle_CornerRadius_Property(temp);
+        this_CornerRadius_inst = new jiraclient_Card_CornerRadius_Property(this);
+        temp_Fill_inst = new jiraclient_FuseControlsRectangle_Fill_Property(temp);
+        this_Fill_inst = new jiraclient_Card_Fill_Property(this);
         var temp1 = new Fuse.Controls.PropertyBinding<float4>(temp_CornerRadius_inst, this_CornerRadius_inst);
         var temp2 = new Fuse.Controls.PropertyBinding<Fuse.Drawing.Brush>(temp_Fill_inst, this_Fill_inst);
         this.Padding = float4(20f, 20f, 20f, 20f);

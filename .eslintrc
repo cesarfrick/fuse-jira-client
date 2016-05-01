@@ -29,11 +29,15 @@
   },
   "env": {
     "es6": true,
+    "node": true
   },
   "extends": "eslint:recommended",
   "ecmaFeatures": {
     "experimentalObjectRestSpread": true,
     "blockBindings": true,
     "modules": true
+  },
+  "parserOptions": {
+      "sourceType": "module"
   }
 }
