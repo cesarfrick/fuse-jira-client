@@ -2,14 +2,6 @@
   "name": "fuse-jira-client",
   "version": "0.0.1",
   "description": "Mobile Jira client created in Fuse",
-  "watch": {
-    "build": {
-      "patterns": [
-        "src"
-      ],
-      "ignore": "javascript"
-    }
-  },
   "scripts": {
     "start": "npm run babel",
     "prebabel": "eslint app/javascript/**/*.js",
