@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Mobile Jira client created in Fuse",
   "scripts": {
-    "start": "npm run babel",
+    "start": "npm run babel -- -w",
     "prebabel": "eslint app/javascript/**/*.js",
-    "babel": "babel src/**/*.js --out-file javascript/main.js -w"
+    "babel": "babel src -d javascript"
   },
   "repository": {
     "type": "git",
