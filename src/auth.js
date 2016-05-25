@@ -1,8 +1,8 @@
-/* eslint no-console: 0 */
 function Auth() {}
 
-Auth.login = () => {
-    return console.log('User logged in, or something');
-};
+Auth.login = () => 'User logged in, or something';
+
+Auth.logout = () => 'User has logged out';
 
 export default Auth;
+module.exports = Auth;

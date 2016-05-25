@@ -1,4 +1,10 @@
 <StackPanel ux:Class="Login" Height="40%" Padding="20" Margin="20">
+    <JavaScript>
+        var auth = require('../javascript/auth');
+        debug_log(auth.login());
+        debug_log(auth.logout())
+    </JavaScript>
+
     <Card CornerRadius="5" Fill="#fff" Layer="Background">
         <Text Value="Enter your Email and Password" Height="48" Alignment="Center" />
         <TextInput InputHint="Email" PlaceholderText="Email" Height="40" Width="80%" />
