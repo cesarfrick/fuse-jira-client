@@ -1,5 +1,4 @@
 <App Theme="Basic">
-    <JavaScript File="./javascript/main.js" />
     <Page Width="100%" Background="#333" Height="100%">
         <Login />
     </Page>
