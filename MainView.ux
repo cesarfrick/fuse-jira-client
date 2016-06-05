@@ -1,4 +1,4 @@
-<App Theme="Basic">
+<App>
     <Page Width="100%" Background="#333" Height="100%">
         <Login />
     </Page>

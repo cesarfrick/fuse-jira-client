@@ -1,14 +1,16 @@
-<StackPanel ux:Class="Login" Height="40%" Padding="20" Margin="20">
-    <JavaScript>
-        var auth = require('../javascript/auth');
-        debug_log(auth.login());
-        debug_log(auth.logout())
-    </JavaScript>
-
+<StackPanel ux:Class="Login" Height="50%" Padding="20" Margin="20">
+    <JavaScript File="../javascript/auth.js" />
     <Card CornerRadius="5" Fill="#fff" Layer="Background">
-        <Text Value="Enter your Email and Password" Height="48" Alignment="Center" />
-        <TextInput InputHint="Email" PlaceholderText="Email" Height="40" Width="80%" />
-        <TextInput IsPassword="true" PlaceholderText="Password" Height="40" Width="80%" />
-        <Button Background="#555" Text="Login" Height="40" Width="80%" />
+        <Text Value="Login to JIRA" Height="48" Alignment="Center" />
+        <TextInput
+            InputHint="URL"
+            PlaceholderText="JIRA Subdomain"
+            Height="40"
+            Width="80%"
+            Value="{Auth.userData.subdomain}"
+        />
+        <TextInput InputHint="Email" PlaceholderText="Email" Height="40" Width="80%" Value="{Auth.userData.username}" />
+        <TextInput IsPassword="true" PlaceholderText="Password" Height="40" Width="80%" Value="{Auth.userData.password}" />
+        <Button Background="#555" Text="Login" Height="40" Width="80%" Clicked="{Auth.login}" />
     </Card>
 </StackPanel>
